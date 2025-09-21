@@ -238,7 +238,7 @@ Resources:
   BlueTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      Name: !Sub ${AWS::StackName}-BlueTargetGroup    
+      Name: BlueTargetGroup    
       Port: 5000
       Protocol: HTTP
       VpcId: !Ref VPC
@@ -248,7 +248,7 @@ Resources:
   GreenTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      Name: !Sub ${AWS::StackName}-GreenTargetGroup
+      Name: GreenTargetGroup
       Port: 5000
       Protocol: HTTP
       VpcId: !Ref VPC
